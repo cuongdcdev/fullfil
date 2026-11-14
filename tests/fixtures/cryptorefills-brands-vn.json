@@ -1,0 +1,28 @@
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "result": {
+    "structuredContent": {
+      "result": {
+        "country_code": "VN",
+        "categories": [
+          {
+            "category": "mobile_credits",
+            "kind": "mobile_recharge",
+            "brands": [
+              { "brand": "Viettel Mobile Credits", "family": "Viettel Mobile", "category": "mobile_credits", "kind": "mobile_recharge", "logo_url": "https://cdn.cryptorefills.com/logos_v2/viettel.webp", "is_out_of_stock": false }
+            ]
+          },
+          {
+            "category": "e-commerce",
+            "kind": "giftcard",
+            "brands": [
+              { "brand": "Lazada", "family": "Lazada", "category": "e-commerce", "kind": "giftcard", "logo_url": "https://cdn.cryptorefills.com/logos_v2/lazada.webp", "is_out_of_stock": false },
+              { "brand": "Unavailable", "family": "Unavailable", "category": "e-commerce", "kind": "giftcard", "is_out_of_stock": true }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

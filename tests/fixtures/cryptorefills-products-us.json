@@ -1,0 +1,22 @@
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "result": {
+    "structuredContent": {
+      "result": [
+        {
+          "country_code": "US",
+          "category": "retail",
+          "kind": "giftcard",
+          "family": "Target",
+          "brand": "Target",
+          "is_out_of_stock": false,
+          "logo_url": "https://cdn.cryptorefills.com/logos_v2/target.webp",
+          "products": [
+            { "is_dynamic": true, "coin": "USDC", "payment_method": "USDC-MORPH", "delivery_type": "by_email", "range": { "min": 2, "max": 500, "currency": "USD", "step_size": 1, "default": "500.0" }, "face_value": { "currency_code": "USD", "amount": { "type": "range", "min": "2.00", "max": "500.00" } } }
+          ]
+        }
+      ]
+    }
+  }
+}

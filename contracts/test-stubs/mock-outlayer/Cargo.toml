@@ -1,0 +1,15 @@
+[package]
+name = "mock-outlayer"
+version = "0.1.0"
+edition = "2021"
+description = "TEST ONLY: stub of outlayer.near request_execution that returns a canned verifier result"
+publish = false
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+near-sdk = "=5.29.1"
+
+[dev-dependencies]
+near-sdk = { version = "=5.29.1", features = ["unit-testing"] }

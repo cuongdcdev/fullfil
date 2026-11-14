@@ -1,0 +1,39 @@
+node_modules
+.next/
+.next-build/
+dist/
+target/
+data/
+*.db
+*.db-shm
+*.db-wal
+.env
+.env.*
+!.env.example
+*.log
+coverage/
+.DS_Store
+*.tsbuildinfo
+private/
+.claude/worktrees/
+apps/shopper/src/*.js
+.next-prod/
+.next-*/
+apps/web/next-env.d.ts
+/core
+
+# private deploy scripts (server details), never publish
+deploy/
+
+# v1 prototype code (ferry-ticket MVP), kept on disk only
+legacy/
+
+# Internal planning, research and dev screenshots: kept locally, never published
+docs/pm/
+docs/brainstorm/
+docs/screens/
+docs/PITCH_UI.md
+docs/UX_SPEC.md
+docs/VALIDATION.md
+docs/BUILD_PLAN.md
+SESSION_HANDOFF_MVP_Fullfi.md

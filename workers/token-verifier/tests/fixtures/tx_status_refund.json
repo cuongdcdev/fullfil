@@ -1,0 +1,160 @@
+{
+  "jsonrpc": "2.0",
+  "id": "synthetic-token-proof",
+  "result": {
+    "final_execution_status": "FINAL",
+    "status": {
+      "SuccessValue": ""
+    },
+    "transaction": {
+      "signer_id": "fulfiller.testnet",
+      "receiver_id": "token.testnet",
+      "hash": "11111111111111111111111111111111",
+      "nonce": 43,
+      "public_key": "ed25519:synthetic-public-key",
+      "signature": "ed25519:synthetic-signature",
+      "actions": [
+        {
+          "FunctionCall": {
+            "method_name": "ft_transfer_call",
+            "args": "eyJyZWNlaXZlcl9pZCI6ImJ1eWVyLnRlc3RuZXQiLCJhbW91bnQiOiIxMDAiLCJtc2ciOiJzeW50aGV0aWMifQ==",
+            "gas": "120000000000000",
+            "deposit": "1"
+          }
+        }
+      ]
+    },
+    "transaction_outcome": {
+      "id": "11111111111111111111111111111111",
+      "block_hash": "11111111111111111111111111111111",
+      "outcome": {
+        "executor_id": "fulfiller.testnet",
+        "logs": [],
+        "status": {
+          "SuccessReceiptId": "transfer-call-receipt"
+        },
+        "receipt_ids": [
+          "transfer-call-receipt"
+        ],
+        "gas_burnt": 2482424242424,
+        "tokens_burnt": "248242424242400000000"
+      }
+    },
+    "receipts_outcome": [
+      {
+        "id": "transfer-call-receipt",
+        "block_hash": "11111111111111111111111111111111",
+        "outcome": {
+          "executor_id": "token.testnet",
+          "logs": [
+            "EVENT_JSON:{\"standard\":\"nep141\",\"version\":\"1.0.0\",\"event\":\"ft_transfer\",\"data\":[{\"old_owner_id\":\"fulfiller.testnet\",\"new_owner_id\":\"buyer.testnet\",\"amount\":\"100\"}]}"
+          ],
+          "status": {
+            "SuccessReceiptId": "receiver-call-receipt"
+          },
+          "receipt_ids": [
+            "receiver-call-receipt"
+          ],
+          "gas_burnt": 4040404040404,
+          "tokens_burnt": "404040404040400000000"
+        }
+      },
+      {
+        "id": "receiver-call-receipt",
+        "block_hash": "11111111111111111111111111111111",
+        "outcome": {
+          "executor_id": "buyer.testnet",
+          "logs": [
+            "synthetic ft_on_transfer returned unused amount 100"
+          ],
+          "status": {
+            "SuccessValue": "MTAw"
+          },
+          "receipt_ids": [
+            "resolve-receipt"
+          ],
+          "gas_burnt": 5050505050505,
+          "tokens_burnt": "505050505050500000000"
+        }
+      },
+      {
+        "id": "resolve-receipt",
+        "block_hash": "11111111111111111111111111111111",
+        "outcome": {
+          "executor_id": "token.testnet",
+          "logs": [
+            "EVENT_JSON:{\"standard\":\"nep141\",\"version\":\"1.0.0\",\"event\":\"ft_transfer\",\"data\":[{\"old_owner_id\":\"buyer.testnet\",\"new_owner_id\":\"fulfiller.testnet\",\"amount\":\"100\"}]}"
+          ],
+          "status": {
+            "SuccessValue": ""
+          },
+          "receipt_ids": [],
+          "gas_burnt": 6060606060606,
+          "tokens_burnt": "606060606060600000000"
+        }
+      }
+    ],
+    "receipts": [
+      {
+        "receipt_id": "transfer-call-receipt",
+        "receiver_id": "token.testnet",
+        "receipt": {
+          "Action": {
+            "signer_id": "fulfiller.testnet",
+            "gas_price": "100000000",
+            "actions": [
+              {
+                "FunctionCall": {
+                  "method_name": "ft_transfer_call",
+                  "args": "",
+                  "gas": "30000000000000",
+                  "deposit": "0"
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "receipt_id": "receiver-call-receipt",
+        "receiver_id": "buyer.testnet",
+        "receipt": {
+          "Action": {
+            "signer_id": "fulfiller.testnet",
+            "gas_price": "100000000",
+            "actions": [
+              {
+                "FunctionCall": {
+                  "method_name": "ft_on_transfer",
+                  "args": "",
+                  "gas": "30000000000000",
+                  "deposit": "0"
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "receipt_id": "resolve-receipt",
+        "receiver_id": "token.testnet",
+        "receipt": {
+          "Action": {
+            "signer_id": "fulfiller.testnet",
+            "gas_price": "100000000",
+            "actions": [
+              {
+                "FunctionCall": {
+                  "method_name": "ft_resolve_transfer",
+                  "args": "",
+                  "gas": "30000000000000",
+                  "deposit": "0"
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "result": {
+    "structuredContent": {
+      "result": {
+        "country_code": "US",
+        "categories": [
+          {
+            "category": "retail",
+            "kind": "giftcard",
+            "brands": [
+              { "brand": "Target", "family": "Target", "category": "retail", "kind": "giftcard", "logo_url": "https://cdn.cryptorefills.com/logos_v2/target.webp", "is_out_of_stock": false }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

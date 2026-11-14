@@ -1,0 +1,84 @@
+{
+ "coin": "USDC",
+ "coin_amount": "0.89",
+ "original_coin_amount": "0.89",
+ "coupon_code": null,
+ "loyalty_summary": null,
+ "deliveries": [
+  {
+   "id": "6a76dfc6-b1d0-49b5-9bef-43ad4c1fbf6c",
+   "delivery_state": "Created",
+   "kind": "mobile_recharge",
+   "deliverable": {
+    "denomination": "20000 VND",
+    "localized_denomination": "\u20ab20,000",
+    "family": "Viettel Mobile",
+    "brand_name": "Viettel Mobile Credits",
+    "brand_logo": "https://cdn.cryptorefills.com/logos_v2/viettel.webp",
+    "brand_bg_color": "#d5ac83",
+    "error_description": null,
+    "pin_code": null,
+    "pin_serial": null,
+    "operator_reference": null,
+    "security_code": null,
+    "failure_reason": null,
+    "pin_usage_instructions": null,
+    "barcode_image_url": null,
+    "qr_image_url": null,
+    "beneficiary_account": "+84901234567",
+    "country_code": "VN",
+    "delivery_type": "by_phone",
+    "points": "1",
+    "coin_amount": "0.89",
+    "original_coin_amount": "0.89",
+    "original_price": "0.7844",
+    "product_value": null,
+    "currency_code": "VND",
+    "redeem_instructions": null,
+    "terms_and_conditions": null,
+    "promotion": null
+   }
+  }
+ ],
+ "payment_fee": {
+  "amount": "0",
+  "original_amount": "0"
+ },
+ "points": {
+  "amount": 1,
+  "original_amount": 1
+ },
+ "nft_codes": null,
+ "summary": {
+  "coin_amount_before_discount": "0.89",
+  "coin_amount_after_discount": "0.89",
+  "coin_amount_to_pay_in_crypto": "0.89",
+  "coin_amount_to_pay_via_nft": "0",
+  "coin_amount_to_pay_via_coupon": "0",
+  "coin_amount_to_pay_via_loyalty_points": "0",
+  "points_amount_to_pay_via_loyalty_points": 0,
+  "as_USD": {
+   "value_to_pay_in_crypto": "0.872246",
+   "value_to_pay_via_nft": "0.000000",
+   "value_to_pay_via_coupon": "0.000000",
+   "value_to_pay_via_loyalty_points": "0.000000"
+  },
+  "as_EUR": {
+   "value_to_pay_in_crypto": "0.782234",
+   "value_to_pay_via_nft": "0.000000",
+   "value_to_pay_via_coupon": "0.000000",
+   "value_to_pay_via_loyalty_points": "0.000000"
+  }
+ },
+ "problems": [],
+ "loyalty_redemption": {
+  "enabled": true,
+  "eligible": false,
+  "min_points": 200,
+  "max_points_for_order": 78,
+  "max_coin_discount": "0.8874587318763894",
+  "coin_per_point": "0.0113776760496973"
+ },
+ "coupon_summary": null,
+ "is_payment_processor_external": false
+}

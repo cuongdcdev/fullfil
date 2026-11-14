@@ -1,0 +1,11 @@
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/simple; d=alerts.lotusbank.example; s=lotus1; h=from:to:subject:date; bh=lXAn0HVoerm8I/2iB79iL+flsuCeS4fYzJ3Ccq9kHu0=; b=Q5aq5EfjieL+zRtAh3Pe7TV9/HAcjrgMShCuvt4aflfKkwkSMYJiKj09IWsoLWzqXy2DH46nFtB405ceKq+9MDSBwasHmbCivvVrKJiB4DBmqUH1SatBcUY6pqHLMmAGp1aEAEVLBGi8hmCAxED7q8iznoOCYvP2C6iHe6j7H6DqJuf+DYpS96MXPVIUZZ269xY4DltfBd4ABOS0dGJrmmaja67lUmXks1/7ubizpzfhtAwyVMJ5h+Z0w7Y/hCVGEY+FFGFVpD/ji9/Q7zzO1PCHEkaOc49NA06tQMhj/iAmYQFVfhSR1UplHp/5R+HALkcp9VybSlahmMGXZSUvVQ==
+From: Lotus Bank Alerts <noreply@alerts.lotusbank.example>
+To: customer@example.test
+Subject: Thong bao giao dich
+Date: Fri, 06 Nov 2026 05:31:00 +0000
+
+Lotus Bank - Thong bao giao dich
+Tai khoan 0123xxxx89 -50,000 VND luc 12:31 06/11/2026.
+Nguoi nhan: PHO BAY SAO DEMO - STK xxxxxx4321
+ND: FUL-8K2Q pho. So du 1,250,000 VND.
+Ma giao dich: LTB202611061231A1B2C3

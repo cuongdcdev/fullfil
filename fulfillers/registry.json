@@ -1,0 +1,35 @@
+[
+  {
+    "account_id": "shopper.nearfullfil.near",
+    "name": "Official Fulfil Shopper",
+    "kinds": [
+      "cryptorefills_topup",
+      "cryptorefills_code"
+    ],
+    "operator": "Fulfil",
+    "description": "Reference shopper bot for phone top-ups, gift cards, and eSIMs.",
+    "official": true,
+    "proof": {
+      "public_key": "ed25519:DDMW8xs5daqn5fZRaai2v9FcCxDfkfJasg1oTK8XDADN",
+      "signature": "ed25519:2P5gD6CV71L77oeiMoShQiDq9Ds4jhyFsWdFUc2iHf5B4qPwLZ6tkB2LxcgjHfDSFHN9wwLZFEsvZbbGWvjxb1BC",
+      "message": "fulfil-registry:shopper.nearfullfil.near:c3e4c8bcad20ca3188eb90fbfbb0778089fa85b59ee0aa44fb639c771c7eebd3",
+      "nonce": "Z8ZRERqUg8/s5+me3Aa0ZvNqx/ajN2lqpKw3etC4DJ0="
+    }
+  },
+  {
+    "account_id": "fullfiller1.near",
+    "name": "Fullfiller One — VietQR bank transfers",
+    "kinds": [
+      "bank_transfer"
+    ],
+    "operator": "human",
+    "description": "Helps complete local bank transfers.",
+    "official": false,
+    "proof": {
+      "public_key": "ed25519:BgrE8n94rSsBYTpbNwMRcawjExPTzQ4iesMG1bzyPC26",
+      "signature": "ed25519:5ExhAZvi4R8qKdQ1qGNFy9jfpxrEErKNW1LhB1feB7zj8YNLdSo9vmWnjrnrZGMYoLffZAfZ1trLigLP3BvL2WXk",
+      "message": "fulfil-registry:fullfiller1.near:d50d94e24dc148c0cd62c32060bb77946e2829285b82a9d262486b44752ee72b",
+      "nonce": "N9T057LfCOu03eOCQ3ZckfotYIfOBolpNG0Qf79O67Y="
+    }
+  }
+]

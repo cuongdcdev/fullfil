@@ -1,0 +1,22 @@
+{
+  "name": "@fulfil/shopper",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/main.ts",
+    "recover": "tsx src/recover.ts",
+    "test": "vitest run src",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fulfil/core": "workspace:*",
+    "bs58": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  }
+}

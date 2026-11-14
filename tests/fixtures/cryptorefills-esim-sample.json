@@ -1,0 +1,24 @@
+{
+  "source": "Cryptorefills public MCP listProductsForCountry, 2026-11-08; selected fields only",
+  "VN": [{
+    "category": "e-sim",
+    "kind": "mobile_recharge",
+    "family": "eSIM",
+    "brand": "eSIM",
+    "products": [
+      { "denomination": "1 GB 3 days", "coin_amount": "2.71", "coin": "USDC", "delivery_type": "by_email", "face_value": { "currency_code": "USD", "amount": { "type": "fixed", "price": "1.89" } } },
+      { "denomination": "3 GB 15 days", "coin_amount": "5.20", "coin": "USDC", "delivery_type": "by_email", "face_value": { "currency_code": "USD", "amount": { "type": "fixed", "price": "3.58" } } },
+      { "denomination": "Unlimited 3 days", "coin_amount": "6.48", "coin": "USDC", "delivery_type": "by_email", "face_value": { "currency_code": "USD", "amount": { "type": "fixed", "price": "4.51" } } }
+    ]
+  }],
+  "US": [{
+    "category": "e-sim",
+    "kind": "mobile_recharge",
+    "family": "eSIM",
+    "brand": "eSIM",
+    "products": [
+      { "denomination": "1 GB 3 days", "coin_amount": "2.24", "coin": "USDC", "delivery_type": "by_email", "face_value": { "currency_code": "USD", "amount": { "type": "fixed", "price": "1.4" } } },
+      { "denomination": "5 GB 15 days", "coin_amount": "8.04", "coin": "USDC", "delivery_type": "by_email", "face_value": { "currency_code": "USD", "amount": { "type": "fixed", "price": "5.04" } } }
+    ]
+  }]
+}

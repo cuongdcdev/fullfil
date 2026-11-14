@@ -1,0 +1,84 @@
+{
+ "coin": "USDC",
+ "coin_amount": "1.13",
+ "original_coin_amount": "1.13",
+ "coupon_code": null,
+ "loyalty_summary": null,
+ "deliveries": [
+  {
+   "id": "1ac13f51-eae7-4a3d-a454-b0eea69c254e",
+   "delivery_state": "Created",
+   "kind": "giftcard",
+   "deliverable": {
+    "denomination": "1 USD",
+    "localized_denomination": "$1",
+    "family": "Razer Gold USD",
+    "brand_name": "Razer Gold USD",
+    "brand_logo": "https://cdn.cryptorefills.com/logos_v2/razer-gold.webp",
+    "brand_bg_color": "#000000",
+    "error_description": null,
+    "pin_code": null,
+    "pin_serial": null,
+    "operator_reference": null,
+    "security_code": null,
+    "failure_reason": null,
+    "pin_usage_instructions": null,
+    "barcode_image_url": null,
+    "qr_image_url": null,
+    "beneficiary_account": "synthetic@example.test",
+    "country_code": "VN",
+    "delivery_type": "by_email",
+    "points": "1",
+    "coin_amount": "1.13",
+    "original_coin_amount": "1.13",
+    "original_price": "0.9964",
+    "product_value": null,
+    "currency_code": "USD",
+    "redeem_instructions": "<p>Reload your Razer Gold account to purchase games, digital content and services. Reload your Razer Gold account at gold.razer.com: Go to gold.razer.com and login to your Razer Gold account Click on [Reload Now] and select Razer Gold Gift Card as your payment method Start spending your Razer Gold to earn Razer Silver Or Choose [Razer Gold] at supported games, digital content and services</p>",
+    "terms_and_conditions": "<p>Usage of this card is subject to user\u2019s acceptance of Razer Gold\u2019s Terms of Service and Privacy Policy at gold.razer.com. Compatible software/hardware/internet access required. Risk of loss and title for this card passes to purchaser upon purchase. Razer is not responsible for any loss or damage resulting from lost or stolen cards, or use without permission, or incorrect use. Not for resale. Not redeemable for cash. No refunds or exchanges, except as required by law. Razer and its licensees, affiliates and licensors make no warranties express or implied with respect to this card and disclaim any warranty to the fullest extent available and as permitted by law. Void where prohibited. Content availability and pricing may change. For customer support, visit us at gold.razer.com. All rights reserved.<br>&nbsp;</p>",
+    "promotion": null
+   }
+  }
+ ],
+ "payment_fee": {
+  "amount": "0",
+  "original_amount": "0"
+ },
+ "points": {
+  "amount": 1,
+  "original_amount": 1
+ },
+ "nft_codes": null,
+ "summary": {
+  "coin_amount_before_discount": "1.13",
+  "coin_amount_after_discount": "1.13",
+  "coin_amount_to_pay_in_crypto": "1.13",
+  "coin_amount_to_pay_via_nft": "0",
+  "coin_amount_to_pay_via_coupon": "0",
+  "coin_amount_to_pay_via_loyalty_points": "0",
+  "points_amount_to_pay_via_loyalty_points": 0,
+  "as_USD": {
+   "value_to_pay_in_crypto": "1.107458",
+   "value_to_pay_via_nft": "0.000000",
+   "value_to_pay_via_coupon": "0.000000",
+   "value_to_pay_via_loyalty_points": "0.000000"
+  },
+  "as_EUR": {
+   "value_to_pay_in_crypto": "0.993173",
+   "value_to_pay_via_nft": "0.000000",
+   "value_to_pay_via_coupon": "0.000000",
+   "value_to_pay_via_loyalty_points": "0.000000"
+  }
+ },
+ "problems": [],
+ "loyalty_redemption": {
+  "enabled": true,
+  "eligible": false,
+  "min_points": 200,
+  "max_points_for_order": 99,
+  "max_coin_discount": "1.126389928920033",
+  "coin_per_point": "0.0113776760496973"
+ },
+ "coupon_summary": null,
+ "is_payment_processor_external": false
+}

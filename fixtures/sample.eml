@@ -1,0 +1,11 @@
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/simple; d=tickets.fulfil-demo.test; s=test; h=from:to:subject:date; bh=Aen6t3kvZhhYCrpV04dKxvRHtX0Ld3xXIzTPGtCzl4c=; b=lGUh61jUArK8z2LmLQasCBklvUzq+MJFRxXQeB7ts2u2dJh9xd8wtZ6lan70BZJOopWIvvZRdgxbcWs+ckOX23Q5nEPYqwkmkcFebJyK4CLpn9dxkgRvnfkEYHdvmsNdG2Bsk5AUtxPBt3ZRsmJaeY9y+osIvSmyH6JkV9xilHSWFTde1WLyidf5e2OHUm9xroqu5EK/v+W7Azm5GSkpQAio90+l1WyQMgA3B2AJboyoAlGRiqqtS/vTVjwDsiuWHHMYSOMOPWUCVS2DvUUeYrSRsuOkObBrPwwJ2aWzKSNv7bY/rkvBLsTZFcDt16IOIYPkOA4LQVtKazMUBeQqIA==
+From: Fulfil Demo Tickets <tickets@tickets.fulfil-demo.test>
+To: agent-alpha.testnet
+Subject: Ferry ticket confirmation
+Date: Thu, 29 Oct 2026 10:00:00 +0000
+
+Order ID: BOOK-DEMO-001
+Date: 2026-11-07
+Quantity: 2
+Names: Alice Nguyen, Bob Tran
+Item: Cham Islands ferry, Hoi An to Cu Lao Cham

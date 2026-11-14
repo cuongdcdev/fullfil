@@ -1,0 +1,43 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0",
+    "build": "next build",
+    "start": "next start --hostname 0.0.0.0",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fulfil/adapters": "workspace:*",
+    "@fulfil/attest": "workspace:*",
+    "@fulfil/core": "workspace:*",
+    "@hot-labs/near-connect": "^0.12.0",
+    "@napi-rs/canvas": "^0.1.80",
+    "@zxing/browser": "^0.1.5",
+    "better-sqlite3": "^11.10.0",
+    "bs58": "^6.0.0",
+    "drizzle-orm": "^0.41.0",
+    "libphonenumber-js": "^1.13.16",
+    "lucide-react": "^0.468.0",
+    "marked": "^18.2.0",
+    "next": "^15.3.0",
+    "pdfjs-dist": "^5.4.296",
+    "qrcode": "^1.5.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "viem": "^2.57.16",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^24",
+    "@types/qrcode": "^1.5.6",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.8.0"
+  }
+}

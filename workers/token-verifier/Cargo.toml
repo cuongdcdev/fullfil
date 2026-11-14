@@ -1,0 +1,16 @@
+[package]
+name = "token-verifier"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+
+[target.'cfg(all(target_arch = "wasm32", target_os = "wasi"))'.dependencies]
+wasi = "0.13.3"
+url = "2.5"
+
+[target.'cfg(not(all(target_arch = "wasm32", target_os = "wasi")))'.dependencies]
+ureq = { version = "2.12", default-features = false, features = ["tls"] }

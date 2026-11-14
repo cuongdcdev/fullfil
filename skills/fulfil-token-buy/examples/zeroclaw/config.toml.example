@@ -1,0 +1,51 @@
+schema_version = 4
+
+# ZeroClaw config for an unattended Fulfil token_buy fulfiller.
+# Copy to ~/.zeroclaw/config.toml (chmod 600) and replace every <PLACEHOLDER>.
+# Holds no secrets: zc-run.sh injects the LLM endpoint, key and model at launch through
+# ZEROCLAW_providers__models__custom__llm__{uri,api_key,model}. The values below are
+# overridden in memory and never written back.
+
+[tools]
+optional = ["*"]
+
+# Any OpenAI-compatible chat-completions endpoint.
+[providers.models.custom.llm]
+uri = "https://placeholder.invalid/v1"   # overridden by zc-run.sh
+model = "placeholder"                     # overridden by zc-run.sh
+timeout_secs = 120
+native_tools = true          # without it some models print raw tool-call markup instead of calling tools
+context_window = 131072      # set to your model's real window; the unknown-model default is too small
+
+# Unattended, but the shell can run `node` only, the shell sees only the vars listed here,
+# and file access is limited to the agent workspace plus the skill folder.
+[risk_profiles.fulfil]
+level = "full"
+workspace_only = true
+allowed_commands = ["node"]
+allowed_roots = ["<SKILL_DIR>"]          # real path, e.g. /home/you/fulfil/skills/fulfil-token-buy
+block_high_risk_commands = true
+require_approval_for_medium_risk = false
+shell_env_passthrough = ["NEAR_ACCOUNT_ID", "FULFIL_API", "HOME"]
+auto_approve = ["shell", "read_skill"]
+always_ask = []
+allowed_tools = ["shell", "read_skill"]  # closed tool set; also keeps the prompt small
+
+[runtime_profiles.fulfil]
+agentic = true
+max_tool_iterations = 40
+max_actions_per_hour = 120
+shell_timeout_secs = 240
+
+# Loads <install>/shared/skills/fulfil/fulfil-token-buy/ (a symlink to <SKILL_DIR>).
+[skill_bundles.fulfil]
+include = ["fulfil-token-buy"]
+
+[agents.fulfiller]
+model_provider = "custom.llm"
+risk_profile = "fulfil"
+runtime_profile = "fulfil"
+skill_bundles = ["fulfil"]
+
+[agents.fulfiller.workspace]
+path = "<AGENT_HOME>/workspace"          # holds AGENTS.md (operating rules for the agent)

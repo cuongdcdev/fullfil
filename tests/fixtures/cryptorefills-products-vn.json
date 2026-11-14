@@ -1,0 +1,35 @@
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "result": {
+    "structuredContent": {
+      "result": [
+        {
+          "country_code": "VN",
+          "category": "mobile_credits",
+          "kind": "mobile_recharge",
+          "family": "Viettel Mobile",
+          "brand": "Viettel Mobile Credits",
+          "is_out_of_stock": false,
+          "logo_url": "https://cdn.cryptorefills.com/logos_v2/viettel.webp",
+          "products": [
+            { "is_dynamic": false, "denomination": "10000 VND", "coin_amount": "0.44", "coin": "USDC", "payment_method": "USDC-MORPH", "delivery_type": "by_phone", "face_value": { "currency_code": "VND", "amount": { "type": "fixed", "price": "10000" } } },
+            { "is_dynamic": false, "denomination": "20000 VND", "coin_amount": "0.88", "coin": "USDC", "payment_method": "USDC-MORPH", "delivery_type": "by_phone", "face_value": { "currency_code": "VND", "amount": { "type": "fixed", "price": "20000" } } }
+          ]
+        },
+        {
+          "country_code": "VN",
+          "category": "e-commerce",
+          "kind": "giftcard",
+          "family": "Lazada",
+          "brand": "Lazada",
+          "is_out_of_stock": false,
+          "logo_url": "https://cdn.cryptorefills.com/logos_v2/lazada.webp",
+          "products": [
+            { "is_dynamic": false, "denomination": "100000 VND", "coin_amount": "4.11", "coin": "USDC", "payment_method": "USDC-MORPH", "delivery_type": "by_email", "face_value": { "currency_code": "VND", "amount": { "type": "fixed", "price": "100000" } } }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@fulfil/adapters",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@fulfil/core": "workspace:*",
+    "@fulfil/attest": "workspace:*",
+    "dotenv": "^16.6.1",
+    "@napi-rs/canvas": "^0.1.80",
+    "pdfjs-dist": "^5.4.296",
+    "zod": "^4.1.11"
+  }
+}

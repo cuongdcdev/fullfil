@@ -1,0 +1,18 @@
+{
+  "name": "fulfil-token-buy-skill",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node test/index.js"
+  },
+  "dependencies": {
+    "near-api-js": "7.4.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}

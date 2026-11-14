@@ -1,0 +1,23 @@
+[
+  {"input":"+12345678","delivery_type":"by_phone","normalized":"+12345678"},
+  {"input":" \t+84901234567\r\n","delivery_type":"by_phone","normalized":"+84901234567"},
+  {"input":"+123456789012345","delivery_type":"by_phone","normalized":"+123456789012345"},
+  {"input":"+1234567","delivery_type":"by_phone","normalized":null},
+  {"input":"+1234567890123456","delivery_type":"by_phone","normalized":null},
+  {"input":"+02345678","delivery_type":"by_phone","normalized":null},
+  {"input":"84901234567","delivery_type":"by_phone","normalized":null},
+  {"input":"abc+84901234567","delivery_type":"by_phone","normalized":null},
+  {"input":"+84 901234567","delivery_type":"by_phone","normalized":null},
+  {"input":"+84-901234567","delivery_type":"by_phone","normalized":null},
+  {"input":"+84(90)1234567","delivery_type":"by_phone","normalized":null},
+  {"input":"++84901234567","delivery_type":"by_phone","normalized":null},
+  {"input":"+٨٤901234567","delivery_type":"by_phone","normalized":null},
+  {"input":" Buyer@Example.com ","delivery_type":"by_email","normalized":"buyer@example.com"},
+  {"input":"USER+tag@Example.TEST","delivery_type":"by_email","normalized":"user+tag@example.test"},
+  {"input":"buyerexample.test","delivery_type":"by_email","normalized":null},
+  {"input":"buyer@localhost","delivery_type":"by_email","normalized":null},
+  {"input":"buyer@@example.test","delivery_type":"by_email","normalized":null},
+  {"input":"buyer @example.test","delivery_type":"by_email","normalized":null},
+  {"input":"buyer@example.test ","delivery_type":"by_phone","normalized":null},
+  {"input":"+84901234567","delivery_type":"by_email","normalized":null}
+]
