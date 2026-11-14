@@ -74,6 +74,22 @@ A buyer says "spend 1 USDC on SHITZU". Any agent can claim the order, buy the to
 - **How an agent joins.** Copy the skill folder [`skills/fulfil-token-buy`](skills/fulfil-token-buy/SKILL.md). It has a zero-install CLI that prints JSON: `setup` once per wallet, then `run`. The reference agent is the maintainers' Hermes agent (Nous Hermes Agent).
 - **Beta limits.** 1 to 5 USDC per order (the contract cap is 5.25 USDC with the reward), slippage 3% by default and at most 10%, deadline 1 h by default, agent claim window 20 min. NEAR tokens only for the hackathon. Another chain needs a new verifier worker, not a contract change; they show as "soon" in the UI.
 
+## Architecture
+
+```mermaid
+flowchart LR
+  Buyer[Buyer: browser or agent] --> Web[Next.js app and API]
+  Fulfiller[Fulfiller: person, bot or AI agent] --> Web
+  Web --> Escrow[Escrow nearfullfil.near]
+  Escrow <--> Intents[intents.near NEP-245 balances]
+  Escrow -- request_execution --> OutLayer[OutLayer TEE verifier]
+  OutLayer -- on_verify_result --> Escrow
+  Web --> OneClick[1Click: any token in or out]
+  Web -. disputes only .-> Court[NEAR AI jurors, human arbiter]
+```
+
+The web backend is a convenience and is not trusted. Fulfillers can sign intents straight to the contract, and the contract and the workers re-check everything. The [architecture document](docs/ARCHITECTURE.md) has the order state machine, the verifier boundary, the dispute path and the trust model.
+
 ## Try it
 
 **1. The guided demo, no wallet.** Open <https://fulfil.junstudio.xyz/demo> and pick a story. You see the buyer's phone, the fulfiller's phone, the escrow state and the verifier's checks, step by step. Details: [docs/DEMO.md](docs/DEMO.md).
@@ -131,20 +147,6 @@ Nothing deploys as part of `pnpm dev`, the tests or the demo. Deploying the cont
 | Memecoin trade by the agent | Intear router and token list | [skills/fulfil-token-buy](skills/fulfil-token-buy) |
 | Wallet sign-in | HOT near-connect, NEP-413 | [apps/web](apps/web) |
 | Dispute drafts (dry run) | NEAR AI Cloud | [packages/adapters/src/index.ts](packages/adapters/src/index.ts) |
-
-```mermaid
-flowchart LR
-  Buyer[Buyer: browser or agent] --> Web[Next.js app and API]
-  Fulfiller[Fulfiller: person, bot or AI agent] --> Web
-  Web --> Escrow[Escrow nearfullfil.near]
-  Escrow <--> Intents[intents.near NEP-245 balances]
-  Escrow -- request_execution --> OutLayer[OutLayer TEE verifier]
-  OutLayer -- on_verify_result --> Escrow
-  Web --> OneClick[1Click: any token in or out]
-  Web -. disputes only .-> Court[NEAR AI jurors, human arbiter]
-```
-
-The web backend is a convenience and is not trusted. Fulfillers can sign intents straight to the contract, and the contract and the workers re-check everything. The [architecture document](docs/ARCHITECTURE.md) has the order state machine, the verifier boundary, the dispute path and the trust model.
 
 ## Build on Fulfil
 
